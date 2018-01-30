@@ -35,7 +35,12 @@ PRODUCT_PACKAGES += \
     MagicSmokeWallpapers \
     NoiseField \
     PhaseBeam \
-    PhotoTable
+    PhotoTable \
+    Brave
+
+PRODUCT_COPY_FILES += vendor/zipperglobal/bootanim/bootanimation.zip:system/media/bootanimation.zip
+
+PRODUCT_PACKAGE_OVERLAYS += vendor/zipperglobal/overlay
 
 # Additional settings used in all AOSP builds
 PRODUCT_PROPERTY_OVERRIDES := \
